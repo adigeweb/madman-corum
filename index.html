@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Çorum</title>
+    </head>
+    <body>
+        <img class="char" preload>
+        <img class="map" preload>
+        <img class="civilian" preload data-name="Rehber" data-npc>
+        <div class="hitboxes">
+            <div class="box num1 col"></div>
+            <div class="box num2 col"></div>
+            <div class="box num3 col"></div>
+            <div class="box num4 col"></div>
+            <div class="box num5 col"></div>
+            <div class="box num6"></div>
+            <div class="box num7"></div>
+        </div>
+        <div class="ui">
+            <div class="konum"></div>
+            <meter id="can" min="0" value="100" max="100" low="50" optimum="100"></meter>
+        </div>
+        <div class="gorevler">
+            <ul>
+                <li id="ilk-sohbet">Arkadaşın ile konuş.</li>
+            </ul>
+        </div>
+        <div class="envanter">
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+        </div>
+        <div class="uyari">
+            <p id="mesaj">
+                <strong>B102'ye</strong> girmek istediğine emin misin?
+            </p>
+            <button id="ok">Evet</button>
+            <button id="no">Hayır</button>
+        </div>
+        <div class="market" data-name="Market">
+            Burası henüz açılmamış...
+            <div class="kapat">&times;</div>
+        </div>
+        <div class="diyalog"></div>
+    </body>
+</html>
+<script src="script.js"></script>
